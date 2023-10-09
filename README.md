@@ -75,7 +75,15 @@ The original code from which the updated kmr_sunrise code is based upon.
 Currently, only the packages that enable mapping of an environment using [SLAM_Toolbox](https://github.com/SteveMacenski/slam_toolbox/) and Navigation2 has been enabled for use in ROS2 'Foxy Fitzroy'. Other packages, such as MoveIt2, are yet to be fully tested with the current version.
 
 After building, remember to source the setup file (install/setup.bash).
+Before running gazebo simulation, add the gazebo model to bashrc
 
+$ gedit ~/.bashrc
+```
+
+Export the absolute path of the kmr folder in your PC/Laptop--> Add this line to the end of your bashrc document
+```
+export GAZEBO_MODEL_PATH=/YOUR_PATH_TO_THIS_WS/kmriiwa_ros2_ws/src/kmr_simulation/models
+```
 To launch the robot in a simulated environment, simply run
 ```
 $ ros2 launch kmr_simulation gazebo.launch.py
