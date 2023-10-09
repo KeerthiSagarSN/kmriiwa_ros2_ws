@@ -76,9 +76,9 @@ Currently, only the packages that enable mapping of an environment using [SLAM_T
 
 After building, remember to source the setup file (install/setup.bash).
 Before running gazebo simulation, add the gazebo model to bashrc
-
-$ gedit ~/.bashrc
 ```
+$ gedit ~/.bashrc
+
 
 Export the absolute path of the kmr folder in your PC/Laptop--> Add this line to the end of your bashrc document
 ```
